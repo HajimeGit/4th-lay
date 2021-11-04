@@ -1,0 +1,32 @@
+@import "normalize"; @import "fonts"; @import "header"; @import "contact"; @import "sites"; @import "stats"; @import "feedback"; @import "video"; @import "mentors"; @import "map"; @import "social"; @import "footer";
+
+$ff:"OpenSans-Regular",sans-serif;
+$fz:16px;
+
+
+
+ul,li{
+  margin: 0;
+  padding: 0;
+}
+html,body{
+  height: 100%;
+  font-family: $ff;
+  font-size: $fz;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.wrapper{
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+}
+.container{
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 1220px;
+  padding: 0 15px;
+}
+
+
