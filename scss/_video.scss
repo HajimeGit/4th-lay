@@ -2,11 +2,8 @@
   width: 100%;
   background-color: #f7f7f7;
   .video_container {
-    box-sizing: border-box;
-    margin: 0 auto;
     max-width: 1220px;
-    width: 100%;
-    padding: 0 15px;
+    @extend.containers;
     .video_body {
       width: 100%;
       display: flex;
@@ -41,7 +38,10 @@
           @media (max-width: 767px) {
             height: 400px;
           }
-          @media (max-width: 321px) {
+          @media (max-width: 500px) {
+            height: 300px;
+          }
+          @media (max-width: 380px) {
             height: 200px;
           }
         }

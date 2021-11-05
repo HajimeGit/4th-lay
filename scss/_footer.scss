@@ -2,11 +2,8 @@
   width: 100%;
   background-color: white;
   .footer_container{
-    box-sizing: border-box;
-    margin: 0 auto;
     max-width: 1220px;
-    width: 100%;
-    padding: 0 15px;
+    @extend.containers;
     .footer_body{
       display: flex;
       flex-direction: column;
@@ -21,19 +18,20 @@
         }
         padding-top: 54px;
         padding-bottom: 25px;
-        a{
-          text-decoration: none;
-          color: #349ae0;
-        }
+        text-decoration: none;
+        color: #349ae0;
       }
       .footer_text{
         @media (max-width: 386px) {
           font-size: 12px;
           padding-bottom: 25px;
         }
+        a{
+          text-decoration: none;
+          color: #93938e;
+        }
         font-size: 14px;
         padding-bottom: 45px;
-        color: #93938e;
       }
     }
   }
